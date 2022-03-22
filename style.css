@@ -1,0 +1,556 @@
+/*Configs Globais*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.current{
+    color: aqua;
+    font-weight: bolder;
+}
+
+
+/*Header*/
+
+header{
+    padding: 20px;
+    background-color: rgb(2, 54, 54);
+    color: #ffffff;
+    width: 100%;
+    border-bottom: aqua 3px solid;
+    position: fixed;
+}
+
+header #logo_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo_menu #navbar li.current a{
+    color: aqua;
+    font-weight: bolder;
+}
+
+#logo_menu #navbar li.current a:hover{
+    color: #fff;
+    font-weight: bolder;
+}
+
+/*ASIDE - CARATERISTICAS*/
+.imagem{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+aside{
+    position:fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+
+}
+
+.carater #barra_menu{
+    background-color: rgb(26, 24, 24);
+    height: 100vh;
+    width: 280px;
+    color: white; 
+    transition-timing-function: ease-in-out;
+    transition: 0.3s ease-in-out;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carater i {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+}
+
+#img_carater{
+    height: 200px;
+    width: 190px;
+    border-radius: 40px;
+  margin-left: 50px;
+}
+#barra_menu ul li{
+    list-style: none;
+
+}
+
+#barra_menu ul li a{
+    
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+#barra_menu h3{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#barra_menu h4{
+    font-size: 15px;
+}
+
+#barra_menu p{
+    font-size: 12px;
+    color: aqua;
+}
+
+/*........*/
+.logo img{
+    width: 40px;
+    border-radius: 100%;
+}
+
+header #navbar {
+    display: flex;
+    
+}
+header #navbar ul li{
+    list-style: none;
+    float: left;
+    margin: 0 20px;
+    
+}
+
+header #navbar a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header #navbar li a:hover{
+    transition: 0.2s ease-in-out;
+   background: rgb(26, 24, 24);
+   padding: 10px;
+   font-weight: bolder;
+   color: teal;
+ 
+   transition-timing-function: ease-in-out;
+}
+
+/*DESTAQUE*/
+
+.destaque{
+    background: url('./img/hacker_img.jpg')  no-repeat ;
+    background-size: cover;
+    background-clip: border-box;
+    width: 100%;
+    height: 600px;
+    
+   display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+
+}
+
+.destaque #img_destaque{
+    height: 200px;
+    width: 190px;
+    border-radius: 40px;
+    margin-top: 110px;
+
+}
+
+.destaque #img_destaque:hover{
+    box-shadow: 0 10px 10px rgb(0,0, 0, 0.35);
+    border: 2px solid teal;
+    transform: scale(1.5);
+    box-shadow: 0 5px 15px rgb(0,0,0,0.6);
+}
+
+.destaque #btn_destaque:hover{
+    color: aqua;
+    font-weight: bolder;
+    background: rgb(26, 24, 24);
+    width: 201px;
+    height: 41px;
+}
+#comp i{
+   font-size: 40px;
+}
+
+.destaque h1{
+    margin-top: 2px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.destaque p{
+    margin-top: 10px;
+    color: #ffffff;
+}
+#btn_destaque{
+    color: #ffffff;
+    background-color: teal;
+    border-radius: 30px;
+    width: 200px;
+   
+}
+
+.destaque hr{
+    width: 200px;
+    height: 5px;
+    background-color: #ffffff;
+   
+}
+
+/*RECEBER EMAIL*/
+
+.receber_email{
+    padding: 30px;
+    color: #ffffff;
+    align-items: center;
+    background-color: rgb(2, 54, 54);
+    margin: 0;
+   text-align: center;
+}
+
+.receber_email h3{
+    float: left;   
+
+}
+
+.receber_email form{
+ float: right;
+}
+
+#btn_receber{
+    color: #ffffff;
+    background-color: teal;
+    border-radius: 30px;
+    width: 200px;
+   
+}
+
+ #btn_receber:hover{
+    color: aqua;
+    font-weight: bolder;
+    background: rgb(26, 24, 24);
+    width: 201px;
+    height: 41px;
+}
+#email_receber{
+    border-radius: 30px;
+    width: 220px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/*TIPOS SERVICO*/
+
+
+.img_servico{
+    width: 105px;
+    margin-top: 8px;
+}
+.tipos_servico{
+   
+    padding: 70px;
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+
+}
+/*Hover para os efeitos de transicao*/
+
+.servico:hover{
+   
+    box-shadow: 0 10px 10px rgb(0,0, 0, 0.35);
+    border: 2px solid black;
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgb(0,0,0,0.6);
+  
+}
+
+.tipos_servico .servico {
+    background-color: rgb(2, 54, 54);;
+    margin:0 20px;
+    text-align: center;
+    border-radius: 20px;
+    height: 190px;
+    width: 270px;
+   
+}
+
+.tipos_servico .servico h3 {
+/*color: #f6d912;*/
+color: aqua;
+   margin-top: 10px;
+}
+#comp{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+}
+#comp h1{
+    font-size: 30px;
+}
+
+#comp hr{
+    width: 200px;
+    height: 3px;
+    background-color: black;
+    color: black;
+    text-align: center;
+    border: none;
+}
+
+/*SERVICOS FEITOS*/
+
+.servicos_feitos{
+    padding: 10px 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.servicos_feitos ul{
+list-style: none;
+}
+
+.servicos_feitos .grid{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+border: black solid 2px;
+margin-top: 20px;
+}
+.servicos_feitos .grid li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.servicos_feitos .grid li.small{
+    flex-basis: 40%;
+    width: 600px;
+}
+
+.servicos_feitos .grid li.large{
+    flex-basis: 60%;
+    width: 900px;
+}
+
+/* SOBRE*/
+
+.sobre{
+    display: flex;
+  justify-content: center;
+  
+  
+}
+.sobre #comp hr{
+    width: 200px;
+    height: 3px;
+    background-color: black;
+    color: black;
+    text-align: center;
+    border: none;
+    align-items: center;
+
+}
+
+.sobre #Box {
+    background-color: rgb(2, 54, 54);
+    margin:0 50px;
+    box-shadow: 0 10px 10px rgb(0,0, 0, 0.35);
+    color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    height: 220px;
+    width: 220px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.sobre #Box #box_text h3{
+    margin-top: 10px;
+    font-size: 18px;
+    /*color: #f6d912;*/
+    color: aqua;
+}
+
+.sobre #Box #box_text p{
+    font-size: 14px;
+}
+.sobre #box #box_text{
+       text-align: center;
+       align-items: center;
+       
+}
+
+/*FOOTER*/
+
+footer{
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    color: #ffffff;
+    background-color: black;
+ 
+}
+
+footer #comp{
+    margin-top: 5px;
+}
+
+footer #comp hr{
+    width: 200px;
+    height: 3px;
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    border: none;
+    align-items: center;
+
+}
+
+
+#footer_ajust{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+footer h3{
+    font-size: 1.5rem;
+}
+footer h4{
+    font-size: 0.8rem;
+}
+
+footer i{
+    color: aqua;
+    font-size: 20px;
+}
+
+footer #rodap{
+    color: aqua;
+    margin-top: 45px;
+    text-align: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media(max-width: 768px){
+    header #logo_menu{
+      display: flex;
+      flex-direction: column;
+      }
+      header #logo_menu #navbar{
+          margin-top: 20px;
+      }
+  
+
+      .destaque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .destaque h1{
+        font-size: 1.5rem;
+        text-align: center;
+      
+      }
+      .receber_email{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+      }
+
+      .receber_email h3{
+          text-align: center;
+          font-size: 1.5rem;
+      }
+
+     .receber_email form #email_receber{
+          width:100% ;
+          margin-bottom: 20px;
+      }
+
+      .receber_email form #btn_receber{
+        width: 420px;
+    }
+
+    .tipos_servico{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tipos_servico .servico{
+        margin-bottom: 25px;
+    }
+
+    .servicos_feitos .grid li.large{
+        flex-basis: 100%;
+        width: 190px;
+    }
+
+    .servicos_feitos .grid li.small{
+        flex-basis: 100%;
+        width: 190px;
+    }
+
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sobre #Box{
+        margin-bottom: 20px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer_ajust{
+        flex-direction: column;
+    }
+
+    footer #foot{
+        margin-bottom: 40px;
+    }
+
+
+  }
+
+
